@@ -1,4 +1,0 @@
-Questa è una prova, la prova va bene, test di commit senza add dopo modifica.
-
-Io ci provo a fare qualcosa vediamo se funziona
-non fa una piega
