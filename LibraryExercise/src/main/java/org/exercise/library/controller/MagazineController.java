@@ -30,4 +30,10 @@ public class MagazineController {
         Magazine response = service.addMagazine(newMagazine);
         return  ResponseEntity.ok(response);
     }
+
+    @RequestMapping(value = "/remove_magazine", method = RequestMethod.DELETE)
+    public ResponseEntity<String> removeMagazine(@RequestParam  Integer id){
+        service.deleteMagazine(id);
+        return ResponseEntity.ok("Magazine deleted");
+    }
 }

@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -35,5 +32,11 @@ public class BookController {
     public ResponseEntity<Book> addBook(@RequestBody Book newBook) {
         Book response = service.addBook(newBook);
         return ResponseEntity.ok(response);
+    }
+
+    @RequestMapping(value = "/remove_book", method = RequestMethod.DELETE)
+    public ResponseEntity<String> removeBook(@RequestParam Integer id){
+        service.deleteBook(id);
+        return ResponseEntity.ok("Book deleted");
     }
 }
