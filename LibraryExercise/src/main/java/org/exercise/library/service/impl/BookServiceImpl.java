@@ -23,7 +23,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public List<Book> findBooks() {
+    public List<Book> findAllBooks() {
         return this.repo.findAll();
     }
 
