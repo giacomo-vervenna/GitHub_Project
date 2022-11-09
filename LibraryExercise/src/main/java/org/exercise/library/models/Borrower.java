@@ -5,13 +5,15 @@ public class Borrower {
     private String name;
     private String surname;
 
-    public Borrower (){}
-    public Borrower(String name, String surname){
+    public Borrower() {
+    }
+
+    public Borrower(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
 
-    public Borrower(Integer id, String name, String surname){
+    public Borrower(Integer id, String name, String surname) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -39,9 +41,5 @@ public class Borrower {
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public void canBorrow(){
-        //TODO
     }
 }

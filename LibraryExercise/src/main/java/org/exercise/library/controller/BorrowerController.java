@@ -1,6 +1,8 @@
 package org.exercise.library.controller;
 
 import org.exercise.library.models.Borrower;
+import org.exercise.library.models.Reservation;
+import org.exercise.library.models.Title;
 import org.exercise.library.service.BorrowerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -51,4 +53,6 @@ public class BorrowerController {
         Borrower response = service.updateBorrower(id, updatedBorrower);
         return ResponseEntity.ok(response);
     }
+
+
 }
