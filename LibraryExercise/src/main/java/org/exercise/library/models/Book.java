@@ -2,6 +2,7 @@ package org.exercise.library.models;
 
 public class Book extends Title {
 
+    public Book(){super(null, 30);}
     public Book(Integer id, String name) {
         super(id, name, 30);
     }

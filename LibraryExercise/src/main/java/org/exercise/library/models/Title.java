@@ -17,6 +17,9 @@ public abstract class Title {
         this.lendingTime = lendingTime;
     }
 
+    public void setId(Integer id){
+        this.id = id;
+    }
     public Integer getId() {
         return id;
     }
