@@ -1,3 +1,9 @@
+/** TODO unificare le service magazine e book
+ *
+ */
+
+
+
 package org.exercise.library.service;
 
 import org.exercise.library.models.Magazine;

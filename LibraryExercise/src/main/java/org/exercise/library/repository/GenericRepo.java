@@ -1,5 +1,7 @@
 package org.exercise.library.repository;
 
+import org.exercise.library.models.Borrower;
+
 import java.util.List;
 
 public interface GenericRepo<T> {
