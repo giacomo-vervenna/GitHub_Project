@@ -24,8 +24,8 @@ public class ChangeValueMapComponent {
         throw new ComponentExeption("Value not found");
     }
 
-    public BigDecimal addValueChange(String key, BigDecimal change) {
-       return mapChange.put(key, change);
+    public void addValueChange(String key, BigDecimal change) throws IllegalArgumentException {
+        mapChange.put(key, change);
     }
 
 }

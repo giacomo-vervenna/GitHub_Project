@@ -35,4 +35,8 @@ public class ChCalcService {
             throw e;
         }
     }
+
+    public void addValue(String currency, BigDecimal changeTax ){
+        this.component.addValueChange(currency, changeTax);
+    }
 }

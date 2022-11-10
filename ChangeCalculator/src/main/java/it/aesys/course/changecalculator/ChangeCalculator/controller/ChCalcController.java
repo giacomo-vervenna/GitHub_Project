@@ -28,6 +28,13 @@ public class ChCalcController {
             return ResponseEntity.badRequest().body(new BigDecimal(0));
         }
     }
-//    @PostMapping
-//    public
+    @PostMapping
+    public String addCurrencyTaxChange(String currency, BigDecimal changeTax) throws ServiceExeption {
+        try {
+            this.service.addValue(currency, changeTax);
+        } catch (IllegalArgumentException iae){
+            throw new ServiceExeption("Set a currency and a tax change");
+        }
+        return "Currency change tax added";
+    }
 }
