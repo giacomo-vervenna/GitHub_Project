@@ -25,7 +25,7 @@ public class BookController {
 
     @RequestMapping("/find_books")
     public ResponseEntity<List<Book>> findAllBooks() {
-        List<Book> response = service.findBooks();
+        List<Book> response = service.findAllBooks();
         return ResponseEntity.ok(response);
     }
 
